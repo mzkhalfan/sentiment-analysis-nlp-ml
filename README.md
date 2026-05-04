@@ -111,3 +111,105 @@ Naive Bayes performed slightly better for this dataset, likely due to its effect
 ---
 
 ## 📁 Project Structure
+
+---
+
+## 📊 Principal Component Analysis (PCA) on the Dow Jones Index
+
+---
+
+## 📌 Problem Statement
+
+Financial datasets often contain highly correlated variables, making analysis complex and redundant.  
+The objective of this project is to apply **Principal Component Analysis (PCA)** to:
+
+- Reduce dimensionality  
+- Identify hidden structure in the data  
+- Retain maximum variance with fewer components  
+
+---
+
+## 📂 Dataset
+
+- **Source:** Dow Jones Index dataset  
+- **Features Used:**
+  - Open
+  - High
+  - Low
+  - Close
+  - Volume  
+
+---
+
+## ⚙️ Data Processing
+
+- Checked correlations between variables  
+- Standardized features before applying PCA  
+- Prepared data for dimensionality reduction  
+
+---
+
+## 📉 Visualizations
+
+### 🔹 Correlation Matrix (Before PCA)
+Shows strong correlations among price-related features → justification for PCA  
+
+![Correlation Matrix](../images/dow_jones_correlation_matrix.png)
+
+---
+
+### 🔹 Scree Plot
+Displays explained variance per principal component  
+
+![Scree Plot](../images/pca_scree_plot.png)
+
+---
+
+### 🔹 Cumulative Explained Variance
+Helps determine optimal number of components  
+
+![Cumulative Variance](../images/pca_cumulative_variance.png)
+
+---
+
+### 🔹 PCA 2D Projection
+Visual representation of data using first two principal components  
+
+![PCA Scatter Plot](../images/pca_scatter_plot.png)
+
+---
+
+## 🧠 PCA Implementation
+
+- Applied PCA using `scikit-learn`
+- Reduced dataset into principal components  
+- Identified that a small number of components explain most variance  
+
+---
+
+## 📊 Key Insights
+
+- Strong correlation exists among stock price variables  
+- PCA effectively reduces redundancy in the dataset  
+- Majority of variance captured within first few components  
+- Dimensionality reduction simplifies analysis without major information loss  
+
+---
+
+## 🔍 Key Takeaways
+
+- PCA is powerful for financial data with multicollinearity  
+- Helps in feature reduction and visualization  
+- Useful preprocessing step for machine learning models  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python (pandas, NumPy, scikit-learn)
+- Data Visualization (matplotlib, seaborn)
+- Jupyter Notebook
+
+---
+
+## 📁 Project Structure
